@@ -820,9 +820,17 @@ document["snake"].bind("click",snake.prog)
 <script type="text/python3">
 import beditor
 from browser import document
-url = "https://https://gist.githubusercontent.com/shih1717/42df0320bb026642c2b1721bc4a8b329/raw/5af187d8ef6525ffe23c0ee63504c557d274f2bd/snake2"
+url = "https://gist.githubusercontent.com/shih1717/42df0320bb026642c2b1721bc4a8b329/raw/5af187d8ef6525ffe23c0ee63504c557d274f2bd/snake2"
 src = open(url).read()
 snake2 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["snake2"].bind("click",snake2.prog)
 </script>
-<p><button id="w11">w13-1</button><button id="w11_1">w13-2</button><button id="w11_2">w13-3</button><button id="snake">蛇</button><button id="snake2">蛇2</button></p>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/shih1717/42df0320bb026642c2b1721bc4a8b329/raw/5af187d8ef6525ffe23c0ee63504c557d274f2bd/snake2"
+src = open(url).read()
+snake3 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["snake3"].bind("click",snake3.prog)
+</script>
+<p><button id="w11">w13-1</button><button id="w11_1">w13-2</button><button id="w11_2">w13-3</button><button id="snake">蛇</button><button id="snake2">蛇2</button><button id="snake3">蛇3</button></p>
