@@ -254,7 +254,15 @@ src = open(url).read()
 w11_2 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["w11_2"].bind("click", w11_2.prog)
 </script>
-<p><button id="w11">w13-1</button><button id="w11_1">w13-2</button><button id="w11_2">w13-3</button></p><br />Final Project << <a href='Final Project.html'>Previous</a> </div>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/shih1717/5c53ffca88ec4e02ef4d6f24888d55b3/raw/91d74559af3c79f660ca2cbcff610506fb32c19b/snake"
+src = open(url).read()
+snake = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["snake"].bind("click",snake.prog)
+</script>
+<p><button id="w11">w13-1</button><button id="w11_1">w13-2</button><button id="w11_2">w13-3</button><button id="snake">蛇</button></p><br />Final Project << <a href='Final Project.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
