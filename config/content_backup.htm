@@ -784,10 +784,29 @@ run()
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
+<p></p>
 <script type="text/python3">
 import beditor
 from browser import document
-url = "<script src="https://gist.github.com/shih1717/70a60fa595da1dcc1389f3a7e0bc51be.js">
+url = "https://gist.githubusercontent.com/shih1717/fe16a46f73df3a2042c76380392eec04/raw/cb180dc466843d0d4c3373e7aaf5967d03dfc06d/w13-1"
+src = open(url).read()
+w13-1= beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w13-1"].bind("click", w13-1.prog)
 </script>
-<p>" src = open(url).read() w13 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src") document["w13"].bind("click", w13.prog)</p>
-<p><button id="w13">13</button></p>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/shih1717/02cb189ccdd6c31f7e3cbbb000563ddc/raw/67a061f3cfbac699cb945990b8fd8626694f1046/w13-2"
+src = open(url).read()
+w13-2= beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w13-2"].bind("click",w13-2.prog)
+</script>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/shih1717/5d9364fbc8cb19bb21b738a079099276/raw/14790642a1ab135444a2e6a0bb4d60eb8880f7c2/w13-3"
+src = open(url).read()
+w13-3= beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w11_2"].bind("click", w13-3.prog)
+</script>
+<p><button id="w13-1">w13-1</button><button id="w13-2">w13-2</button><button id="w13-3">w13-3</button></p>
