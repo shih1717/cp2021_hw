@@ -833,4 +833,12 @@ src = open(url).read()
 snake3 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["snake3"].bind("click",snake3.prog)
 </script>
-<p><button id="w11">w13-1</button><button id="w11_1">w13-2</button><button id="w11_2">w13-3</button><button id="snake">蛇</button><button id="snake2">蛇2</button><button id="snake3">蛇3</button></p>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/shih1717/25d3b634ec753366f9039011eb335bd1/raw/6713eefeeb8f8a7d7ed9f9a0e0201f4ee206be2c/snake%2520max"
+src = open(url).read()
+snake4 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["snake4"].bind("click",snake4.prog)
+</script>
+<p><button id="w11">w13-1</button><button id="w11_1">w13-2</button><button id="w11_2">w13-3</button><button id="snake">蛇</button><button id="snake2">蛇2</button><button id="snake3">蛇3</button><button id="snake4">最終蛇</button></p>
