@@ -852,6 +852,8 @@ document["snake4"].bind("click",snake4.prog)
 <p><button id="snake">蛇</button><button id="snake2">蛇2</button><button id="snake3">蛇3</button><button id="snake4">最終蛇</button></p>
 <p>5.小遊戲</p>
 <p><button id="g1">game1</button></p>
+<p>6.期末考試</p>
+<p><button id="final_1">final_1</button><button id="final_2">final_2</button></p>
 <p>
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
@@ -1074,5 +1076,21 @@ url = "https://gist.githubusercontent.com/shih1717/f142867eb49abd541b496bc75a6c1
 src = open(url).read()
 g1 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["g1"].bind("click",g1.prog)
+</script>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/shih1717/a0223dff4fb1e6f818309d7e450c78fd/raw/8a25d20877d4bebdda6f74c857f40678254a2b9c/final_1"
+src = open(url).read()
+final_1= beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["final_1"].bind("click",final_1.prog)
+</script>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/shih1717/057e15e3e9ec718a04742d9f2012af8a/raw/22a52c38a0971f73bb9d9563c6bfcb1a87b068a2/final_2"
+src = open(url).read()
+final_2= beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["final_2"].bind("click",final_2.prog)
 </script>
 </p>
